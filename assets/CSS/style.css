@@ -1,0 +1,386 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    background: url('../../src/pictures/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.brightness {
+    backdrop-filter: brightness(50%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.container-main {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: max(5vw,10px);
+    color: #f1f1f1;
+    font-family: Abril fatface, sans-serif;
+}
+
+h1 span {
+    position: relative;
+}
+.container-bouttons {
+    position: relative;
+    top: 50px;
+}
+.btn-menu {
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: max(30px,5px);
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.btn-menu:nth-child(1){
+    margin-right: 30px;
+}
+.btn-menu:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+
+.lignes {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+}
+.l1 {
+    width: 250px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.l2 {
+    width: 140px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    position: relative;
+    top: 20px;
+}
+
+.logo {
+    position: fixed;
+    right: 1%;
+    top: max(2%,0%);
+    width: 8%;
+    min-width: 150px;
+    cursor: pointer;
+}
+.medias {
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+
+.logo-medias {
+    width: 40px;
+    height: 40px;
+}
+
+/*********************************************************************Contact******************************/
+
+
+
+.title-center {
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+    color: #f1f1f1;
+}
+
+svg {
+    width: 50%;
+}
+
+.container-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 4%;
+    top: 15%;
+}
+
+.container-contact .icon{
+ margin-top: 7%;
+}
+
+.container-contact .icon path {
+    fill: transparent;
+    stroke-width: 0.2;
+    stroke: #ffffff;
+
+}
+
+
+/*Animation geo*/
+
+.container-contact .icon.geo path {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+}
+
+.container-contact .icon.geo:hover path {
+    animation: animate-geo 2s linear forwards ;
+}
+
+@keyframes animate-geo {
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 50;
+    }
+    80%
+    {
+        stroke-dashoffset: 100;
+        fill:transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 100;
+        fill: #ff6b00;
+    }
+}
+
+/*Animation tel*/
+
+.container-contact .icon.phone path {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+}
+
+.container-contact .icon.phone:hover path {
+    animation: animate-phone 2s linear forwards ;
+}
+
+@keyframes animate-phone {
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    40%
+    {
+        stroke-dashoffset: 50;
+    }
+    80%
+    {
+        stroke-dashoffset: 100;
+        fill:transparent;
+    }
+    100%
+    {
+        stroke-dashoffset: 100;
+        fill: #ff6b00;
+    }
+}
+
+/*Animation mail*/
+
+.container-contact .icon.mail path {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 0;
+}
+
+.container-contact .icon.mail:hover path {
+    animation: animate-mail 2s linear forwards ;
+}
+
+@keyframes animate-mail {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 50;
+    }
+    80% {
+        stroke-dashoffset: 100;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 100;
+        fill: #ff6b00;
+    }
+}
+
+/*Animation github*/
+
+.container-contact .icon.github path {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+}
+
+.container-contact .icon.github:hover path {
+    animation: animate-mail 2s linear forwards ;
+}
+
+@keyframes animate-github {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 100;
+    }
+    80% {
+        stroke-dashoffset: 200;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 200;
+        fill: #ff6b00;
+    }
+}
+
+/*Animation LinkedIn*/
+
+.container-contact .icon.linkedin path {
+    stroke-dasharray: 80;
+    stroke-dashoffset: 0;
+}
+
+.container-contact .icon.linkedin:hover path {
+    animation: animate-mail 2s linear forwards ;
+}
+
+@keyframes animate-linkedin {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    40% {
+        stroke-dashoffset: 80;
+    }
+    80% {
+        stroke-dashoffset: 160;
+        fill: transparent;
+    }
+    100% {
+        stroke-dashoffset: 160;
+        fill: #ff6b00;
+    }
+}
+
+#menu{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+
+.photoidnt {
+    max-width:100%;
+    height:auto;
+    align-items: center;
+
+
+}
+
+/*****************************************CV*********************************************/
+
+#photoidnt {
+    max-width:100%;
+    height:auto;
+    position: relative;
+    align-items: center;
+}
+
+
+
+#footer{
+
+    text-align: center;
+    position: absolute;
+
+    vertical-align: middle;
+
+
+}
+
+.download{
+
+    text-align: center;
+    display: block;
+    margin: auto;
+    text-decoration:none;
+}
+
+.download a{
+    text-decoration:none;
+    color: #f1f1f1;
+}
+
+.download a:hover{
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+/************************************************Projet *******************************/
+
+.carousel {
+    width: 70%;
+    margin: auto;
+    padding-top: 2%;
+    min-width: 259px;
+}
+
+.background-color-opacity{
+   background: rgba(47, 47, 47, 0.8);
+}
