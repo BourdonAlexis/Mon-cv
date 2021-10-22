@@ -5,70 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="assets/CSS/media.css">
-    <title>Acceuil</title>
+    <title>Menu</title>
 </head>
-<body>
-<!--    sidebar  -->
-    <!--  bouton ouverture et fermeture  -->
-    <input type="checkbox" id="check">
-    <label for="check">
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"  id="btn-check-open">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-square-fill" viewBox="0 0 16 16" id="btn-check-close">
-            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.354 4.646L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 1 1 .708-.708z"/>
-        </svg>
-    </label>
-    <!--  liste du menu  -->
-    <nav class="sidebar">
-        <header>My app</header>
-        <ul>
-            <li>
-                <a href="index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-app" viewBox="0 0 16 16">
-                        <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h2A1.5 1.5 0 0 1 5 1.5v2A1.5 1.5 0 0 1 3.5 5h-2A1.5 1.5 0 0 1 0 3.5v-2zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5h-2zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                    Menu
-                </a>
-            </li>
-            <li>
-                <a href="project.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder2-open" viewBox="0 0 16 16">
-                        <path d="M1 3.5A1.5 1.5 0 0 1 2.5 2h2.764c.958 0 1.76.56 2.311 1.184C7.985 3.648 8.48 4 9 4h4.5A1.5 1.5 0 0 1 15 5.5v.64c.57.265.94.876.856 1.546l-.64 5.124A2.5 2.5 0 0 1 12.733 15H3.266a2.5 2.5 0 0 1-2.481-2.19l-.64-5.124A1.5 1.5 0 0 1 1 6.14V3.5zM2 6h12v-.5a.5.5 0 0 0-.5-.5H9c-.964 0-1.71-.629-2.174-1.154C6.374 3.334 5.82 3 5.264 3H2.5a.5.5 0 0 0-.5.5V6zm-.367 1a.5.5 0 0 0-.496.562l.64 5.124A1.5 1.5 0 0 0 3.266 14h9.468a1.5 1.5 0 0 0 1.489-1.314l.64-5.124A.5.5 0 0 0 14.367 7H1.633z"/>
-                    </svg>
-                    Mes projets
-                </a>
-            </li>
-            <li>
-                <a href="cv.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
-                    </svg>
-                    CV
-                </a>
-            </li>
-            <li>
-                <a href="contact_page.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
-                        <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
-                        <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
-                    </svg>
-                    Contact
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <section>
-        <div class="container-main">
-            <!--    Text principale    -->
-            <h1><span>Bienvenue </span><span>sur </span><span>mon </span><span>CV</span></h1>
+<body class="background">
+    <header class="header">
+        <nav class="container">
+            <div class="Menu"><a href="index.html">Menu</a></div>
+            <div class="CV"><a href="cv.html">CV</a></div>
+            <div class="creation"><a href="creation.html">Mes creations</a></div>
+        </nav>
+        <hr>
+    </header>
+    <div class="motivation-text">
+        <h1 class="motivation-title">Motivations</h1>
+        <hr>
+        <p><u>Objet :</u> Candidature spontanée concepteur développeur d'applications</p>
+        <p>Madame, Monsieur,</p>
+        <p>Actuellement en formation « concepteur développeur d’applications » et ayant déjà validé une première formation « technique de bases du développement d’applications » à l’afpa d’Amiens, ainsi qu'une certification en cybersécurité délivrée par l'ANSSI, je dois réaliser un stage de 3 mois (du 21/06/21 au 10/09/21) afin de valider mon titre professionnel.</p>
+        <p>Expérimenté dans le domaine industriel grâce à mon emploi à STELIA ainsi qu’à mes nombreux stages à l’usine BETRANCOURT, je cherche à me ré-orienter dans le domaine du développement web/web mobile ainsi qu’à la conception d’application grâce à cette formation, domaines qui m'intéressent grandement. Fort de mes acquis sur les langages web et desktop lors de mon apprentissage, j’ai pus réaliser quelques <a href="project.html">applications et site web</a> afin de m’exercer pour mes futurs projets professionnels. De ce fait, je serais en capacité de m'adapter rapidement au nouveau matériel de travail. Attentif, rigoureux et responsable, je ferais de mon mieux pour répondre aux attentes des clients afin de leurs offrir un service fiable, en respectant les dates limites prévus pour répondre au cahier des charges.</p>
+        <p>Exercer au sein de votre entreprise pourrait m’être que bénéfique afin d’obtenir une expérience nouvelle à travers un domaine qui m’intéresse grandement. De ce fait, ces apprentissages pourraient agrandir mon cercle de connaissances, afin de valider mon projet professionnel et ma formation suite à ce stage. De plus, le travail en équipe me permettrait d’acquérir de nouveaux savoir-faire et d’en transmettre.</p>
+        <p>Sachant que l'écoute, l'observation et l'organisation sont des critère fondamentaux et un gage de qualité des services, j’appliquerais conformément les savoirs que l'on m'aura transmis. Par conséquent, je donnerais le meilleur de moi-même pour garder un environnement de travail sain afin d’exercer dans les meilleures conditions possibles.</p>
+        <p>Dans l’attente de vous détailler ma motivation, je vous prie de croire en mes sentiments les meilleurs.</p>
+        <p>BOURDON Alexis</p>
 
-        </div>
-
-    </section>
-
-
-<!--    Ajout de js -->
-    <script src="assets/JS/script.js"></script>
+    </div>
+    <footer></footer>
 </body>
 </html>
