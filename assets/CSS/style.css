@@ -1,20 +1,25 @@
+/****************************GLOBAL*******************************************/
+
 body{
     margin: 0;
 }
 
+/*style du background global*/
 .background{
     background: #343434;
 }
+/*style du header*/
 .header{
     background: #1a1a1a;
     padding-top: 0.3% ;
 }
-
+/*Retire les décoration des liens et les passe en blanc*/
 a{
     text-decoration: none;
     color: #f1f1f1;
 }
 
+/*Style des grilles de la navbar*/
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -27,30 +32,72 @@ a{
     align-items: center;
     grid-template-areas:
     "Menu CV creation";
+    padding-bottom: 1%;
+    padding-top: 1%;
 }
 
+/*Style du bouton menu*/
 .Menu {
-
     justify-self: center;
     align-self: center;
     grid-area: Menu;
 }
 
-.CV {
+/*Agrandi le bouton menu une fois que l'on passe dessus et ajoute une transition*/
+.Menu:hover{
+    transition: .4s;
+    font-size: 130%;
+}
 
+/*Style du bouton CV*/
+.CV {
     justify-self: center;
     align-self: center;
     grid-area: CV;
 }
 
-.creation {
+/*Agrandi le bouton CV une fois que l'on passe dessus et ajoute une transition*/
+.CV:hover{
+    transition: .4s;
+    font-size: 130%;
+}
 
+/*Style du bouton Creation*/
+.creation {
     justify-self: center;
     align-self: center;
     grid-area: creation;
 }
 
+/*Agrandi le bouton Creation une fois que l'on passe dessus et ajoute une transition*/
+.creation:hover{
+    transition: .4s;
+    font-size: 130%;
+}
+
+/************************************FOOTER************************************************/
+
+/*Style du footer*/
+.footer{
+    color: #f1f1f1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1a1a;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.container_footer{
+    display: inline-flex;
+    justify-self: center;
+    align-self: center;
+}
+
 /*****************************************INDEX*********************************************/
+
+/*Style du texte de motivation*/
 .motivation-text {
     color: #f1f1f1;
     margin-left: 5%;
@@ -61,6 +108,7 @@ a{
 
 /*****************************************CV*********************************************/
 
+/*Style de la photo d'indentité*/
 #photoidnt {
     max-width:100%;
     height:auto;
@@ -69,7 +117,7 @@ a{
 }
 
 
-
+/*Style du footer du CV (spécial ajout en plus de boostrap sur CV)*/
 #footer{
 
     text-align: center;
@@ -94,6 +142,54 @@ a{
 }
 
 .download a:hover{
-    color: #f1f1f1;
+    transition: .5s;
+    color: #ff0000;
 }
 
+/**************************************creation*****************************************/
+
+/* Style tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style des boutons utilisé pour ouvrir les contenues */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change la couleur du background quand la souris passe au dessus du bouton */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Change la couleur du background actif*/
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style du contenue du tab */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Pat de 0 jusqu'a  l'opacity total */
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
