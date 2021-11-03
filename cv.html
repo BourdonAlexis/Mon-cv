@@ -1,152 +1,170 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/CSS/style.css">
-    <link rel="stylesheet" href="assets/CSS/media.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/CSS/style.css">
+  <link rel="stylesheet" href="assets/CSS/media.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 
-    <title>Curriculum Vitae</title>
+  <title>Curriculum Vitae</title>
 </head>
-<body>
+<body class="background">
 
-    <header>
-
-    </header>
-    <div class="container-fluid text-light">
-        <div class="row">
-            <!--colonne gauche-->
-            <aside class="col-xl-4 col-lg-12 bg-secondary">
-                <div class="container d-none d-lg-block">
-                    <div class="background-img">
-                        <div class="box text-center">
-                            <a href="index.html"><button class="btn-menu b6">Menu</button></a>
-                            <figure class="content">
-                                <img src="src/pictures/photo_cv.PNG" class="rounded border border-dark mt-2 photoidnt" alt="photo identité">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="container content d-lg-none text-center">
-                    <a href="index.html"><button class="btn-menu b16" >Menu</button></a>
-                    <figure class="photo">
-                        <img src="src/pictures/photo_cv.PNG" class="rounded border border-dark mt-2 photoidnt" alt="photo identité">
-                    </figure>
-                </div>
-                <p class="text-center mt-3 text-light">Alexis BOURDON	(22 ans - Né le 06.02.1999)</p>
-                <p class="text-center mt-3 text-light">12 Grande Rue</p>
-                <p class="text-center mt-3 text-light">80560 LOUVENCOURT</p>
-                <p class="text-center mt-3 text-light">06 46 11 61 52</p>
-                <p class="text-center mt-3 text-light">alexisbourdon@hotmail.fr</p>
-                <p class="text-center mt-3 text-light">Permis B + Véhicule </p>
-                <!--       téléchargement CV         -->
-                <div class="download" >
-                    <a href="src/docs/CV_BOURDON_ALEXIS.pdf" onclick="open('src/docs/CV_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-cloud-arrow-down " viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
-                            <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
-                        </svg>
-                        <p class="fs-1">Télécharger mon CV</p>
-                    </a>
-                </div>
-
-
-
-
-            </aside>
-            <!--TEXTE-->
-            <div class="col-xl-8 col-lg-12 texalign brightness" id="cv">
-                <!-- COMPETENCES PRO -->
-                <span class="h2 d-none d-lg-block">Compétences Professionnelles</span>
-                <span class="h4 d-lg-none">Compétences Professionnelles</span>
-                <hr>
-                <p>- Identifier les phases de conception d'un produit création d'un UML/MCD selon les besoin du client</p>
-                <p>- Maquetter une application</p>
-                <p>- Maitrise de base des langages de programmation HTML/CSS/JS/SQL/PHP </p>
-                <p>- Maîtrise de base des langages de programmation JAVA </p>
-                <p>- Lecture et mise en application d'un cahier des charges</p>
-                <p>- Régler les paramètres de machines et des équipements</p>
-                <p>- Contrôler un produit fini</p>
-
-                <!-- COMPETENCES PERSO -->
-                <span class="h2 d-none d-lg-block">Compétences Personelles</span>
-                <span class="h4 d-lg-none">Compétences Personelles</span>
-                <hr>
-                <p>- Organisé </p>
-                <p>- Travail en équipe</p>
-                <p>- Rigoureux</p>
-                <p>- Attentif</p>
-                <p>- Persévérant</p>
-
-                <!-- EXPERIENCES -->
-                <span class="h2 d-none d-lg-block">Expériences</span>
-                <span class="h4 d-lg-none">Expériences</span>
-                <hr>
-                <p><u>2019 à 2020 : Intérim STELIA Aerospace 80300 MEAULTE (16 mois)</u></p>
-                <p> - Ajustage et assemblages pièces diverses</p>
-                <p> - Contrôle produit et retouche cosmétique</p>
-                <p> - Lecture de plan</p>
-                <br>
-                <p><u>2019 : Intérim 4B France 80800 LAMOTTE-WARFUSEE (1 semaine)</u></p>
-                <p> - Gestion de commande</p>
-                <p> - Préparation de commande</p>
-                <p> - Polyvalence dans l'établissement</p>
-                <br>
-                <p><u>2015 à 2017 : Stage Établissement BETRANCOURT 80300 ALBERT (17 semaines)</u></p>
-                <p> - Observation</p>
-                <p> - Aides diverses aux salariés</p>
-                <p> - Polyvalence dans l'établissement</p>
-                <p> - Découverte du métier</p>
-                <br>
-
-                <!-- FORMATIONS -->
-                <span class="h2 d-none d-lg-block">Formations</span>
-                <span class="h4 d-lg-none">Formations</span>
-                <hr>
-                <p>2021 :  <a href="src/docs/attestation_secnumacademie_BOURDON_ALEXIS.pdf" onclick="open('src/docs/attestation_secnumacademie_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >Initiation à la cybersécurité </a> - ANSSI - Agence nationale de la sécurité des systèmes d'information</p>
-                <p>2020 : <a href="src/docs/Attestation_formation_BOURDON_ALEXIS.pdf" onclick="open('src/docs/Attestation_formation_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >Technique de bases du développement d'applications </a> - Centre de formation AFPA 80000 Amiens</p>
-                <p>2019 : <b>C</b>ertificat de <b>Q</b>ualification <b>P</b>aritaire de la <b>M</b>étallurgie -  Centre de formation Promeo 80080 AMIENS</p>
-                <p>2017 : <a href="src/docs/Bac_BOURDON_ALEXIS.pdf" onclick="open('src/docs/Bac_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" ><b>Bac</b>calauréat <b>Pro</b>fessionnel <b>Technicien d'Usinage</b> </a> - Lycée professionnel Lamarck 80300 ALBERT</p>
-                <p>2016 : <b>B</b>revet d'<b>E</b>nseignement <b>P</b>rofessionnel <b>Technicien d'Usinage</b> - Lycée professionnel Lamarck 80300 ALBERT</p>
-                <p>2014 : Brevet des collèges - Collège Edmée Jarlaud  80560 ACHEUX EN AMIENOIS</p>
-                <br>
-                <!-- DIVERS -->
-                <span class="h2 d-none d-lg-block">Divers</span>
-                <span class="h4 d-lg-none">Divers</span>
-                <hr>
-                <p><b><u>Connaissance informatiques</u></b> : Visual Studio Code, JetBrains, Solidworks, Photoshop, Blender, Cinema 4D, Adobe première pro, Sony Vegas, Adobe After Effect.</p>
-                <p><b><u>Loisirs</u></b> : Guitare, graphisme en association</p>
+  <header class="header">
+    <nav class="container">
+      <div class="Menu"><a href="index.html">Menu</a></div>
+      <div class="CV"><a href="cv.html">CV</a></div>
+      <div class="creation"><a href="creation.html">Mes creations</a></div>
+    </nav>
+    <hr class="text-light">
+  </header>
+  <div class="container-fluid text-light">
+    <div class="row">
+      <!--colonne gauche-->
+      <aside class="col-xl-4 col-lg-12 bg-secondary">
+        <div class="container d-none d-lg-block">
+          <div class="background-img">
+            <div class="box text-center">
+              <figure class="content">
+                <img src="src/pictures/photo_cv.PNG" class="rounded border border-dark mt-2 photoidnt" alt="photo identité">
+              </figure>
             </div>
+          </div>
         </div>
+        <div class="container content d-lg-none text-center">
+          <figure class="photo">
+            <img src="src/pictures/photo_cv.PNG" class="rounded border border-dark mt-2 photoidnt" alt="photo identité">
+          </figure>
+        </div>
+        <p class="text-center mt-3 text-light">Alexis BOURDON	(22 ans - Né le 06.02.1999)</p>
+        <p class="text-center mt-3 text-light">12 Grande Rue</p>
+        <p class="text-center mt-3 text-light">80560 LOUVENCOURT</p>
+        <p class="text-center mt-3 text-light">06 46 11 61 52</p>
+        <p class="text-center mt-3 text-light">alexisbourdon@hotmail.fr</p>
+        <p class="text-center mt-3 text-light">Permis B + Véhicule </p>
+        <!--       téléchargement CV         -->
+        <div class="download" >
+          <a href="src/docs/CV_BOURDON_ALEXIS.pdf" onclick="open('src/docs/CV_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" fill="currentColor" class="bi bi-cloud-arrow-down " viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.646 10.854a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 9.293V5.5a.5.5 0 0 0-1 0v3.793L6.354 8.146a.5.5 0 1 0-.708.708l2 2z"/>
+              <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383zm.653.757c-.757.653-1.153 1.44-1.153 2.056v.448l-.445.049C2.064 6.805 1 7.952 1 9.318 1 10.785 2.23 12 3.781 12h8.906C13.98 12 15 10.988 15 9.773c0-1.216-1.02-2.228-2.313-2.228h-.5v-.5C12.188 4.825 10.328 3 8 3a4.53 4.53 0 0 0-2.941 1.1z"/>
+            </svg>
+            <p class="fs-1">Télécharger mon CV</p>
+          </a>
+        </div>
+      </aside>
+      <!--COLONNE DE DROITE-->
+      <div class="col-xl-8 col-lg-12 texalign brightness" id="cv">
+        <!-- COMPETENCES PRO -->
+        <span class="h2 d-none d-lg-block">Compétences Professionnelles</span>
+        <span class="h4 d-lg-none">Compétences Professionnelles</span>
+        <hr>
+        <p>- Identifier les phases de conception d'un produit création d'un UML/MCD selon les besoin du client</p>
+        <p>- Maquetter une application</p>
+        <p>- Maitrise de base des langages de programmation HTML/CSS/JS/SQL/PHP </p>
+        <p>- Maîtrise de base des langages de programmation JAVA / Python </p>
+        <p>- Lecture et mise en application d'un cahier des charges</p>
+        <p>- Régler les paramètres de machines et des équipements</p>
+        <p>- Contrôler un produit fini</p>
+
+        <!-- COMPETENCES PERSO -->
+        <span class="h2 d-none d-lg-block">Compétences Personelles</span>
+        <span class="h4 d-lg-none">Compétences Personelles</span>
+        <hr>
+        <p>- Organisé </p>
+        <p>- Travail en équipe</p>
+        <p>- Rigoureux</p>
+        <p>- Attentif</p>
+        <p>- Persévérant</p>
+
+        <!-- EXPERIENCES -->
+        <span class="h2 d-none d-lg-block">Expériences</span>
+        <span class="h4 d-lg-none">Expériences</span>
+        <hr>
+        <p><u>2021 à 2021 : Stage ETERELZ 75008 PARIS (3 mois)</u></p>
+        <p> - Developpement React/JSX/No-SQL</p>
+        <p> - Mise en place CRUD gestion d'événement</p>
+        <p> - Refonte d'une page de connexion</p>
+        <br>
+        <p><u>2019 à 2020 : Intérim STELIA Aerospace 80300 MEAULTE (16 mois)</u></p>
+        <p> - Ajustage et assemblages pièces diverses</p>
+        <p> - Contrôle produit et retouche cosmétique</p>
+        <p> - Lecture de plan</p>
+        <br>
+        <p><u>2019 : Intérim 4B France 80800 LAMOTTE-WARFUSEE (1 semaine)</u></p>
+        <p> - Gestion de commande</p>
+        <p> - Préparation de commande</p>
+        <p> - Polyvalence dans l'établissement</p>
+        <br>
+        <p><u>2015 à 2017 : Stage Établissement BETRANCOURT 80300 ALBERT (17 semaines)</u></p>
+        <p> - Observation</p>
+        <p> - Aides diverses aux salariés</p>
+        <p> - Polyvalence dans l'établissement</p>
+        <p> - Découverte du métier</p>
+        <br>
+
+        <!-- FORMATIONS -->
+        <span class="h2 d-none d-lg-block">Formations</span>
+        <span class="h4 d-lg-none">Formations</span>
+        <hr>
+        <p>2021 : <b>C</b>oncepteur <b>D</b>eveloppeur d'<b>A</b>pplication  - Centre de formation AFPA 80000 Amiens </p>
+        <p>2021 :  <a href="src/docs/attestation_secnumacademie_BOURDON_ALEXIS.pdf" onclick="open('src/docs/attestation_secnumacademie_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >Initiation à la cybersécurité </a> - ANSSI - Agence nationale de la sécurité des systèmes d'information</p>
+        <p>2020 : <a href="src/docs/Attestation_formation_BOURDON_ALEXIS.pdf" onclick="open('src/docs/Attestation_formation_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" >Technique de bases du développement d'applications </a> - Centre de formation AFPA 80000 Amiens</p>
+        <p>2019 : <b>C</b>ertificat de <b>Q</b>ualification <b>P</b>aritaire de la <b>M</b>étallurgie -  Centre de formation Promeo 80080 AMIENS</p>
+        <p>2017 : <a href="src/docs/Bac_BOURDON_ALEXIS.pdf" onclick="open('src/docs/Bac_BOURDON_ALEXIS.pdf', 'Popup', 'scrollbars=1,resizable=1,height=560,width=770'); return false;" ><b>Bac</b>calauréat <b>Pro</b>fessionnel <b>Technicien d'Usinage</b> </a> - Lycée professionnel Lamarck 80300 ALBERT</p>
+        <p>2016 : <b>B</b>revet d'<b>E</b>nseignement <b>P</b>rofessionnel <b>Technicien d'Usinage</b> - Lycée professionnel Lamarck 80300 ALBERT</p>
+        <p>2014 : Brevet des collèges - Collège Edmée Jarlaud  80560 ACHEUX EN AMIENOIS</p>
+        <br>
+        <!-- DIVERS -->
+        <span class="h2 d-none d-lg-block">Divers</span>
+        <span class="h4 d-lg-none">Divers</span>
+        <hr>
+        <p><b><u>Connaissance informatiques</u></b> : Visual Studio Code, JetBrains, Solidworks, Photoshop, Blender, Cinema 4D, Adobe première pro, Sony Vegas, Adobe After Effect.</p>
+        <p><b><u>Loisirs</u></b> : Guitare, graphisme en association</p>
+      </div>
     </div>
-    <!--bas de page-->
-    <footer class="col-12 bg-dark text-light" id="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
-                        <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
-                        <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
-                    </svg>
-                    <p>alexisbourdon@hotmail.fr</p>
-                </div>
-                <div class="col-xl-6 col-lg-12">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
-                        <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
-                        <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                    </svg>
-                    <p>06 46 11 61 52</p>
-                </div>
-            </div>
+  </div>
+  <!--bas de page-->
+  <footer class="col-12 bg-dark " id="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-3 col-lg-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mailbox" viewBox="0 0 16 16">
+            <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+            <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+          </svg>
+          <p>alexisbourdon@hotmail.fr</p>
         </div>
-    </footer>
+        <div class="col-xl-3 col-lg-12">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone" viewBox="0 0 16 16">
+            <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+          </svg>
+          <p>06 46 11 61 52</p>
+        </div>
+        <div class="col-xl-3 col-lg-12">
+          <a href="https://www.linkedin.com/in/alexis-bourdon-64aa1120b/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16" id="linkedIn">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg>
+            <p>Alexis Bourdon</p>
+          </a>
+        </div>
+        <div class="col-xl-3 col-lg-12">
+          <a href="https://github.com/BourdonAlexis">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16" id="gitbub">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            <p>BourdonAlexis</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 </html>
