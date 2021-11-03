@@ -7,8 +7,10 @@ body{
 
 /*style du background global*/
 .background{
+    background: url("../../src/pictures/background.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    background: url("../../src/pictures/background.png") no-repeat fixed;
+    background-attachment: fixed;
     overflow-x: hidden;
     height: 100%;
     position: relative;
